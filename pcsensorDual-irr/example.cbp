@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-fpermissive" />
+			<Add option="-Wnarrowing" />
+			<Add option="-Wall" />
+			<Add option="-DUNIT_TEST" />
+			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-fpermissive" />
+			<Add option="-Wnarrowing" />
+			<Add option="-Wall" />
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="usb" />
+			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux" />
+		</Linker>
+		<Unit filename="GraphKat.cpp" />
+		<Unit filename="GraphKat.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="pcsensor.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
